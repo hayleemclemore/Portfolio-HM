@@ -34,6 +34,12 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
+    <link
+      href="assets/css/styles.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
     <script
       src="https://kit.fontawesome.com/d6140523cb.js"
       crossorigin="anonymous"
@@ -53,7 +59,7 @@
       >
         <div class="container">
           <div class="col flex-fill px-0 d-flex justify-content-between">
-            <a class="navbar-brand mr-0 fade-page" href="home-portfolio.html"
+            <a class="navbar-brand mr-0 fade-page" href="index.html"
               ><img src="" alt="" />hm</a
             >
             <button
@@ -224,30 +230,101 @@
     </section>
     <hr>
 
-     <!--Footer-->
-    <footer class="pb-5 bg-original text-dark">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="h1" id="about">About Me</div>
-            <div class="my-5">
-              <p class="lead">
-                I'm a Web Designer, based out of Nashville, TN. I received my
-                B.S. in Information Technology and Graphic Media. After spending
-                a few years as a designer working closely with other developers,
-                I became interested in pursuing devolopment for myself. <br><br>My
-                upbringing isn't as linear as some. I moved overseas at the age
-                of 10, and spent almost nine years living in Turkey. I moved
-                back to the state for college and have moved around a handful of
-                times since then. Growing up overseas gave me an invaluable
-                perspective of the world, and a variety of cultural experiences
-                I will hold on to and reference in the years ahead. When I'm not
-                working, I spend a decent amount of my free time hiking,
-                running, and traveling.
-              </p>
-            </div>
+  <!--About Me-->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="h1" id="about">About Me</div>
+          <div class="my-5">
+            <p class="lead">
+              I'm a Web Designer, based out of Nashville, TN. I received my
+              B.S. in Information Technology and Graphic Media. After spending
+              a few years as a designer working closely with other developers,
+              I became interested in pursuing devolopment for myself. <br><br>My
+              upbringing isn't as linear as some. I moved overseas at the age
+              of 10, and spent almost nine years living in Turkey. I moved
+              back to the state for college and have moved around a handful of
+              times since then. Growing up overseas gave me an invaluable
+              perspective of the world, and a variety of cultural experiences
+              I will hold on to and reference in the years ahead. When I'm not
+              working, I spend a decent amount of my free time hiking,
+              running, and traveling.
+            </p>
           </div>
         </div>
+      </div>
+
+    <!--Contact Form-->
+    <section>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-9 col-lg-8 col-xl-6">
+            <div class="text-center mb-4">
+              <h2 class="h1">Let's Connect</h2>
+              <p class="lead"> Leave me a message.
+              </p>
+            </div>
+            <form action="/forms/smtp.php" data-form-email novalidate>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Your Name *</label>
+                    <input name="contact-name" type="text" class="form-control" required>
+                    <div class="invalid-feedback">
+                      Please type your name.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Email Address *</label>
+                    <input name="contact-email" type="email" placeholder="you@yoursite.com" class="form-control" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Company Name</label>
+                    <input name="contact-company" type="text" class="form-control" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label>Contact Number</label>
+                    <input name="contact-phone" type="tel" class="form-control" required>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label>Message:</label>
+                    <textarea class="form-control" name="contact-message" rows="10" placeholder="How can we help?"></textarea>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE"></div>
+                </div>
+                <div class="col">
+                  <div class="d-none alert alert-success" role="alert" data-success-message>
+                    Thanks, a member of our team will be in touch shortly.
+                  </div>
+                  <div class="d-none alert alert-danger" role="alert" data-error-message>
+                    Please fill all fields correctly.
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-loading" data-loading-text="Sending">
+                    <img class="icon" src="assets/img/icons/theme/code/loading.svg" alt="loading icon" data-inject-svg />
+                    <span>Send Enquiry</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <!--Footer-->
+    <footer class="pb-5 bg-original text-dark">
+      
         <div class="row mb-4">
           <div class="col">
             <ul class="nav">
