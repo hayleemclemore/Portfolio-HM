@@ -23,7 +23,21 @@ section .nav-link:not(.active):not(.disabled):not(:hover), footer .nav-link:not(
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255);
+    font-size: 1.2rem;
+    text-shadow: rgba(255, 255, 255, 0.454);
+    
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color:#cf741d;
+    
+}
+
+
+.btn-primary {
+    background-color: #cf741d;
+    border-color: #d16f11;
 }
 
 .bio {
