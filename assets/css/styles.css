@@ -25,3 +25,8 @@ section .nav-link:not(.active):not(.disabled):not(:hover), footer .nav-link:not(
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255, 255, 255, 1);
 }
+
+.bio {
+    float: right;
+    padding-left: 80px;
+}
