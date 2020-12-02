@@ -1754,19 +1754,19 @@ fieldset:disabled a.btn {
   border-color: #2A2A72; }
   .btn-primary:hover {
     color: #fff;
-    background-color: #202056;
+    background-color: #000;
     border-color: #1c1c4d; }
   .btn-primary:focus, .btn-primary.focus {
     box-shadow: 0 0 0 0.2rem rgba(74, 74, 135, 0.5); }
   .btn-primary.disabled, .btn-primary:disabled {
     color: #fff;
-    background-color: #2A2A72;
-    border-color: #2A2A72; }
+    background-color: #000;
+    border-color: #000; }
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #1c1c4d;
-    border-color: #191943; }
+    background-color: #000;
+    border-color: #000; }
     .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-primary.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(74, 74, 135, 0.5); }
@@ -2105,12 +2105,12 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5); }
 
 .btn-outline-light {
-  color: #f8f9fa;
-  border-color: #f8f9fa; }
+  color: #cf741d;
+  border-color: #cf741d; }
   .btn-outline-light:hover {
-    color: #212529;
-    background-color: #f8f9fa;
-    border-color: #f8f9fa; }
+    color: #000000;
+    background-color:none;
+    border-color: #000; }
   .btn-outline-light:focus, .btn-outline-light.focus {
     box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5); }
   .btn-outline-light.disabled, .btn-outline-light:disabled {
@@ -4863,7 +4863,7 @@ button.bg-primary-2:focus {
   background-color: #e3240c !important; }
 
 .bg-primary-3 {
-  background-color: #020122 !important; }
+  background-color: #ffffff !important; }
 
 a.bg-primary-3:hover, a.bg-primary-3:focus,
 button.bg-primary-3:hover,
@@ -8492,10 +8492,10 @@ strong {
   font-weight: 600; }
 
 .text-light a:not(.btn), .text-light h1, .text-light h2, .text-light h3, .text-light h4, .text-light h5, .text-light h6, .text-light .h1, .text-light .h2, .text-light .h3, .text-light .h4, .text-light .h5, .text-light .h6, .text-light .display-1, .text-light .display-2, .text-light .display-3, .text-light .display-4 {
-  color: #fff; }
+  color: black; }
 
 .text-light .text-muted {
-  color: rgba(255, 255, 255, 0.7) !important; }
+  color: rgba(0, 0, 0, 0.531) !important; }
 
 .highlight {
   display: inline;
